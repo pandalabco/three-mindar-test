@@ -7,11 +7,7 @@ const Box = dynamic(() => import('@/components/canvas/Box'), {
 
 // Step 5 - delete Instructions components
 const Page = (props) => {
-  return (
-    <>
-      <Instructions />
-    </>
-  )
+  return <>{/* <Instructions /> */}</>
 }
 
 Page.r3f = (props) => (

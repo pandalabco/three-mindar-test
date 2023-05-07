@@ -1,16 +1,16 @@
-import { useRouter } from 'next/router'
-import useStore from '@/helpers/store'
-import { useEffect } from 'react'
-import Header from '@/config'
-import Dom from '@/components/layout/dom'
-import '@/styles/index.css'
-import dynamic from 'next/dynamic'
+import { useRouter } from "next/router"
+import useStore from "@/helpers/store"
+import { useEffect } from "react"
+import Header from "@/config"
+import Dom from "@/components/layout/dom"
+import "@/styles/index.css"
+import dynamic from "next/dynamic"
 
-const LCanvas = dynamic(() => import('@/components/layout/canvas'), {
+const LCanvas = dynamic(() => import("@/components/layout/canvas"), {
   ssr: false,
 })
 
-function App({ Component, pageProps = { title: 'index' } }) {
+function App({ Component, pageProps = { title: "index" } }) {
   const router = useRouter()
 
   useEffect(() => {
